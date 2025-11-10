@@ -69,7 +69,7 @@ def xu_ly():
                 else:
                     log_text.insert(tk.END, f"   ⚠️ (dòng {idx+1}) Tìm thấy trong TT50 nhưng không xác định loại PT/TT\n\n")
             else:
-                # Nếu tìm thấy nhưng không xác định loại PT/TT → để trống
+                # Nếu không tìm thấy loại PT/TT → để trống
                 df_khoa.at[idx, 5] = ""
                 log_text.insert(tk.END, f"   ❌ (dòng {idx+1}) Không tìm thấy trong TT50\n\n")
 
